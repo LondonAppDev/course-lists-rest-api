@@ -21,4 +21,4 @@ class ListItemViewSet(viewsets.ModelViewSet):
     """
 
     serializer_class = ListItemSerializer
-    queryset = ListItem.objects.all()
+    queryset = models.ListItem.objects.all()
