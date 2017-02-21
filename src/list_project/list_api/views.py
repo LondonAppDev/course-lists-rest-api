@@ -17,7 +17,7 @@ class ListItemSerializer(serializers.ModelSerializer):
 
 class ListItemViewSet(viewsets.ModelViewSet):
     """
-    Viewset for managing list items via HTTP requests.
+    Create, read, update and delete list items in our database.
     """
 
     serializer_class = ListItemSerializer
