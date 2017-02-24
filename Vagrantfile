@@ -17,8 +17,8 @@ Vagrant.configure("2") do |config|
   config.vm.network "forwarded_port", guest: 8080, host: 8080
 
   config.vm.provision "shell", inline: <<-SHELL
-    apt-get update
-    apt-get install -y python3-dev sqlite python-pip
+    sudo apt-get update
+    sudo apt-get install -y python3-dev sqlite python-pip
 
     sudo pip install virtualenvwrapper
 
