@@ -8,5 +8,5 @@ class ListItemViewSet(viewsets.ModelViewSet):
     Create, read, update and delete list items in our database.
     """
 
-    serializer_class = ListItemSerializer
+    serializer_class = serializers.ListItemSerializer
     queryset = models.ListItem.objects.all()
